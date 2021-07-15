@@ -123,7 +123,7 @@ function checkWin() {
       }
     }
   }
-  return 2;
+  return "draw";
 }
 
 function mouseClicked() {
@@ -153,7 +153,7 @@ function mouseClicked() {
     text(`Player ${winner} is winner!`, mouseX, mouseY);
     restartBtn.style.display = "block";
     return;
-  } else if (winner == 2) {
+  } else if (winner == "draw") {
     // Draw
     fill(0, 0, 0);
     textSize(24);
