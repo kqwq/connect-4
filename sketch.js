@@ -1,4 +1,5 @@
 let turn, arr;
+let cellSize = 0
 let restartBtn = document.getElementById("restart");
 restartBtn.addEventListener("click", () => {
   init();
@@ -126,6 +127,11 @@ function checkWin() {
 }
 
 function mouseClicked() {
+  // If mouse is outside canvas
+  if (mouseX < 0 || mouseX > window.innerWidth || mouseY < 0 || mouseY > window.innerHeight) {
+    return;
+  }
+
   let x = floor(mouseX / cellSize);
   // Get lowest y in connect-4
   for (let i = arr.length - 1; i > -1; i--) {
