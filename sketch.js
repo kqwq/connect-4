@@ -116,14 +116,9 @@ function mouseClicked() {
   let winner = checkWin()
   console.log(winner);
   if (winner != 0) {
-    if (winner == 1) {
-      fill(255, 0, 0)
-    }
-    if (winner == 2) {
-      fill(0, 0, 255)
-    }
+    fill(255)
     textSize(24)
-    text(`player ${winner} is winner!`, mouseX, mouseY)
+    text(`Player ${winner} is winner!`, mouseX, mouseY)
     return
   } else if (winner == 2) {
     // Draw

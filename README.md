@@ -16,3 +16,4 @@ I wanted to show how ridiculously easy this is to code by making my own version 
 ## Link to game
 
 Should be published to https://kqwq.github.io/connect-4
+Start to finish: 31 minutes
