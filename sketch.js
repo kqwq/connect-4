@@ -147,7 +147,7 @@ function mouseClicked() {
   // Check if game is over
   let winner = checkWin();
   console.log(winner);
-  if (winner != 0) {
+  if (winner != 0 && winner != "draw") {
     fill(255);
     textSize(24);
     text(`Player ${winner} is winner!`, mouseX, mouseY);
